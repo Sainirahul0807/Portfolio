@@ -20,7 +20,9 @@ mobileLinks.forEach((link) => link.addEventListener('click', closeMenu));
 
 const enquiryForm = document.querySelector('#enquiry');
 const enquiryNote = document.querySelector('.enquiry__note');
+const queryToast = document.querySelector('.query-toast');
 const talkButtons = document.querySelectorAll('a[href="#enquiry"]');
+let queryToastTimer;
 
 talkButtons.forEach((link) => {
   link.addEventListener('click', () => {
@@ -44,15 +46,14 @@ if (enquiryForm) {
       return;
     }
 
-    const subject = encodeURIComponent(`New enquiry from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nPlace: ${place}\nPhone: ${phone}\n\nMessage:\n${message}`
-    );
-
-    window.location.href = `mailto:rahulparshant2003@gmail.com?subject=${subject}&body=${body}`;
-
-    if (enquiryNote) {
-      enquiryNote.textContent = 'Opening your email app to send this enquiry…';
+    enquiryForm.reset();
+    if (enquiryNote) enquiryNote.textContent = 'Query submitted';
+    if (queryToast) {
+      queryToast.classList.add('query-toast--visible');
+      window.clearTimeout(queryToastTimer);
+      queryToastTimer = window.setTimeout(() => {
+        queryToast.classList.remove('query-toast--visible');
+      }, 2600);
     }
   });
 }

@@ -35,7 +35,46 @@ body {
   line-height: 1.6;
   min-width: 320px;
   overflow-x: hidden;
+  isolation: isolate;
   -webkit-font-smoothing: antialiased;
+}
+
+.photo-bg {
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+}
+
+.photo-bg::after {
+  background: linear-gradient(180deg, rgba(17, 7, 32, .82), rgba(17, 7, 32, .94) 60%, var(--bg));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.photo-bg__layer {
+  background-position: center;
+  background-size: cover;
+  filter: saturate(.82) contrast(1.08);
+  opacity: .18;
+  position: absolute;
+}
+
+.photo-bg__layer--one {
+  background-image: url("https://images.unsplash.com/photo-1644088379091-d574269d422f?auto=format&fit=crop&q=80&w=3840");
+  inset: -8% -8% 54% -8%;
+}
+
+.photo-bg__layer--two {
+  background-image: url("https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&q=80&w=3840");
+  inset: 28% -10% 24% 42%;
+}
+
+.photo-bg__layer--three {
+  background-image: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=3840");
+  inset: 58% 42% -10% -10%;
 }
 
 body::before {
@@ -640,6 +679,12 @@ img {
   transition: color .25s ease, transform .25s ease;
 }
 
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
 .text-link:hover,
 .email-link:hover {
   color: var(--purple-light);
@@ -775,6 +820,30 @@ img {
   font-size: 1.3rem;
   margin-top: 1.4rem;
   min-height: 1.6em;
+}
+
+.query-toast {
+  background: #21113c;
+  border: 1px solid rgba(198, 160, 255, .55);
+  border-radius: .8rem;
+  bottom: 2.4rem;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, .35);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0;
+  padding: 1rem 1.5rem;
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, 1.5rem);
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 30;
+}
+
+.query-toast--visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .footer__socials {

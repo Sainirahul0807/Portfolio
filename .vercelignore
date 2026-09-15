@@ -5,5 +5,4 @@ node_modules
 .gitignore
 README.md
 sass
-css/style.css
 package-lock.json

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Fuel Restoration preview</title>
+  <desc id="desc">Abstract blue and orange preview for the Fuel Restoration sustainability platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#071d2d"/>
+      <stop offset="1" stop-color="#124e73"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1">
+      <stop offset="0" stop-color="#f4aa36"/>
+      <stop offset="1" stop-color="#ffcd67"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1290" cy="150" r="280" fill="#1674a2" opacity=".45"/>
+  <circle cx="1480" cy="420" r="220" fill="#f4aa36" opacity=".12"/>
+  <path d="M0 760C250 590 450 930 760 740s470-110 840 40v220H0Z" fill="#0b334b"/>
+  <path d="M0 825c280-170 410 75 690-90s520-80 910 60" fill="none" stroke="#3eb8ce" stroke-width="9" opacity=".7"/>
+  <g transform="translate(160 160)">
+    <rect width="480" height="520" rx="24" fill="#f7fbfd" opacity=".98"/>
+    <rect x="44" y="44" width="392" height="14" rx="7" fill="#b8ced8"/>
+    <rect x="44" y="82" width="240" height="12" rx="6" fill="#d9e5eb"/>
+    <circle cx="240" cy="280" r="108" fill="#e4f5f3"/>
+    <path d="M240 180c-62 72-86 106-86 150 0 50 38 88 86 88s86-38 86-88c0-44-24-78-86-150Z" fill="url(#orange)"/>
+    <path d="M240 244c-23 29-31 43-31 62 0 19 14 33 31 33s31-14 31-33c0-19-8-33-31-62Z" fill="#fff" opacity=".55"/>
+    <rect x="44" y="438" width="170" height="17" rx="8" fill="#16749a"/>
+    <rect x="232" y="438" width="116" height="17" rx="8" fill="#f4aa36"/>
+  </g>
+  <text x="760" y="390" fill="#fff" font-family="Arial, sans-serif" font-size="76" font-weight="700">FUEL</text>
+  <text x="760" y="480" fill="#ffca5d" font-family="Arial, sans-serif" font-size="76" font-weight="700">RESTORATION</text>
+  <text x="765" y="550" fill="#c6e7f0" font-family="Arial, sans-serif" font-size="28" letter-spacing="6">RECOVER • REUSE • RENEW</text>
+</svg>

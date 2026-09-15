@@ -1,23 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rahul Saini - Full Stack Web Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Rahul Saini - Full Stack Web Developer showcasing projects in React, JavaScript, Node.js and more." />
-    <meta name="keywords" content="Full Stack Developer, Web Developer, Portfolio, React, JavaScript, Node.js" />
-    <meta name="author" content="Rahul Saini" />
     <meta name="theme-color" content="#0062b9" />
-    <meta property="og:title" content="Rahul Saini - Full Stack Web Developer" />
-    <meta property="og:description" content="Explore my portfolio of web development projects using React, JavaScript, and Node.js" />
+    <meta
+      name="description"
+      content="Rahul Saini — AI/ML and web development portfolio."
+    />
+    <meta
+      name="keywords"
+      content="Rahul Saini, AI ML, web developer, React, Python, portfolio"
+    />
+    <meta name="author" content="Rahul Saini" />
+    <meta property="og:title" content="Rahul Saini | AI/ML & Web Developer" />
+    <meta
+      property="og:description"
+      content="Explore Rahul Saini's projects, skills, and experience in AI/ML, data analytics, and web development."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rahul-saini-portfolio.vercel.app" />
-    
-    <link rel="canonical" href="https://rahul-saini-portfolio.vercel.app" />
+    <title>Rahul Saini | AI/ML & Web Developer</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%230062b9'>RS</text></svg>" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,365 +31,318 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="assets/jpeg/Screenshot 2024-09-01 173056.png"
-              alt="Rahul Saini - Full Stack Developer"
-              class="header__logo-img"
-            />
-          </div>
+        <a class="header__logo-container" href="#home" aria-label="Rahul Saini home">
+          <span class="header__logo-img-cont" aria-hidden="true">
+            <span class="header__logo-mark">RS</span>
+          </span>
           <span class="header__logo-sub">Rahul Saini</span>
-        </div>
-        <div class="header__main">
+        </a>
+
+        <nav class="header__main" aria-label="Primary navigation">
           <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
+            <li><a href="#home" class="header__link">Home</a></li>
+            <li><a href="#about" class="header__link">About</a></li>
+            <li><a href="#projects" class="header__link">Projects</a></li>
+            <li><a href="#contact" class="header__link">Contact</a></li>
           </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
+          <button class="header__main-ham-menu-cont" type="button" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </nav>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
+      <div class="header__sm-menu" aria-hidden="true">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is Rahul Saini</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            I'm a passionate<strong> Full Stack Web Developer</strong> dedicated to crafting exceptional digital 
-            experiences. My expertise lies in leveraging the latest web dev technologies
-             to build responsive, accessible, and high-performance interfaces that leave 
-             a lasting impression. Let's create something extraordinary together.
+
+    <main>
+      <section id="home" class="home-hero">
+        <div class="home-hero__content">
+          <p class="eyebrow eyebrow--light">AI/ML • DATA • WEB</p>
+          <h1 class="heading-primary">Hey, my name is Rahul Saini</h1>
+          <div class="home-hero__info">
+            <p class="text-primary">
+              I’m a Computer Science and Engineering student specializing in
+              <strong>Artificial Intelligence and Machine Learning</strong>.
+              I build responsive digital experiences, practical data solutions,
+              and intelligent tools that turn ideas into useful products.
+            </p>
+          </div>
+          <div class="home-hero__cta">
+            <a href="#projects" class="btn btn--bg">View projects</a>
+          </div>
+        </div>
+
+        <div class="home-hero__socials" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="assets/png/linkedin-ico.png" alt="" />
+          </a>
+          <a href="https://github.com/Sainirahul0807" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="assets/png/github-ico.png" alt="" />
+          </a>
+          <a href="mailto:rahulparshant2003@gmail.com" aria-label="Email Rahul">
+            <span class="social-letter">@</span>
+          </a>
+          <a href="tel:+919728517836" class="home-hero__social-icon-link--last" aria-label="Call Rahul">
+            <span class="social-letter">☎</span>
+          </a>
+        </div>
+        <a class="mouse-scroll" href="#about" aria-label="Scroll to about section">
+          <span></span>
+        </a>
+      </section>
+
+      <section id="about" class="about sec-pad">
+        <div class="main-container">
+          <div class="section-heading">
+            <p class="eyebrow">A little about me</p>
+            <h2 class="heading-sec__main">About me</h2>
+            <p class="heading-sec__sub">
+              B.Tech Computer Science and Engineering student at Guru Jambheshwar
+              University of Science & Technology, Hisar, with a focus on AI/ML,
+              data analytics, and frontend development.
+            </p>
+          </div>
+
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">Get to know me</h3>
+              <p class="about__content-details-para">
+                I enjoy working at the intersection of data, design, and
+                technology. My experience includes building responsive
+                interfaces with React and Tailwind CSS, exploring machine
+                learning, and turning information into clear, useful insights
+                with Python, SQL, Excel, and Power BI.
+              </p>
+              <p class="about__content-details-para">
+                I’m a quick learner who brings analytical thinking,
+                adaptability, teamwork, and clear communication to every
+                project. I’m currently completing my B.Tech with a
+                specialization in Artificial Intelligence and Machine Learning.
+              </p>
+              <a href="#contact" class="btn btn--med btn--theme">Let’s connect</a>
+            </div>
+
+            <div class="about__content-skills">
+              <h3 class="about__content-title">My skills</h3>
+              <div class="skills">
+                <span class="skills__skill">Python</span>
+                <span class="skills__skill">C</span>
+                <span class="skills__skill">Java</span>
+                <span class="skills__skill">R</span>
+                <span class="skills__skill">SQL</span>
+                <span class="skills__skill">HTML</span>
+                <span class="skills__skill">CSS</span>
+                <span class="skills__skill">React.js</span>
+                <span class="skills__skill">Tailwind CSS</span>
+                <span class="skills__skill">Power BI</span>
+                <span class="skills__skill">Excel</span>
+                <span class="skills__skill">Machine Learning</span>
+                <span class="skills__skill">AI Chatbots</span>
+                <span class="skills__skill">Prompt Engineering</span>
+                <span class="skills__skill">GitHub</span>
+                <span class="skills__skill">Jupyter Notebook</span>
+                <span class="skills__skill">Figma</span>
+                <span class="skills__skill">Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="credentials">
+            <article class="credential-card">
+              <span class="credential-card__label">Education</span>
+              <h3>B.Tech CSE — AI/ML</h3>
+              <p>Guru Jambheshwar University of Science & Technology, Hisar</p>
+              <strong>2022–2026 · 73%</strong>
+            </article>
+            <article class="credential-card">
+              <span class="credential-card__label">Certifications</span>
+              <h3>Data & machine learning</h3>
+              <p>IBM Data Analyst and Machine Learning with Scikit Learn</p>
+              <strong>Mind Luster · 2026</strong>
+            </article>
+            <article class="credential-card">
+              <span class="credential-card__label">Internship</span>
+              <h3>Web development</h3>
+              <p>One month internship programme at InternPe</p>
+              <strong>September 2024</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects sec-pad">
+        <div class="main-container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2 class="heading-sec__main">Projects</h2>
+            <p class="heading-sec__sub">
+              A mix of product interfaces, data-focused tools, and real-world
+              platforms built with modern web technologies.
+            </p>
+          </div>
+
+          <div class="projects__content">
+            <article class="projects__row">
+              <div class="projects__row-img-cont">
+                <img src="assets/svg/fuel-restoration.svg" alt="Fuel Restoration project preview" class="projects__row-img" loading="lazy" />
+              </div>
+              <div class="projects__row-content">
+                <span class="project-index">01 / Featured project</span>
+                <h3 class="projects__row-content-title">Fuel Restoration</h3>
+                <p class="projects__row-content-desc">
+                  A responsive sustainability platform for collecting used
+                  cooking oil, routing pickups, and turning waste into a
+                  lower-carbon fuel story. Built with React, TypeScript, and
+                  a strong focus on clear user flows.
+                </p>
+                <div class="project-tags">
+                  <span>React</span><span>TypeScript</span><span>Responsive UI</span>
+                </div>
+                <a href="https://github.com/Sainirahul0807/Fuel-Restoration" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">View code</a>
+              </div>
+            </article>
+
+            <article class="projects__row projects__row--reverse">
+              <div class="projects__row-img-cont">
+                <img src="assets/svg/rahul-agro.svg" alt="Rahul Agro Limited project preview" class="projects__row-img" loading="lazy" />
+              </div>
+              <div class="projects__row-content">
+                <span class="project-index">02 / Featured project</span>
+                <h3 class="projects__row-content-title">Rahul Agro Limited</h3>
+                <p class="projects__row-content-desc">
+                  A production-ready cold-storage platform with chamber
+                  discovery, rent calculation, multi-step booking,
+                  government procurement, multilingual support, and the Rahul
+                  Agro Sahayak AI chatbot.
+                </p>
+                <div class="project-tags">
+                  <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+                </div>
+                <a href="https://github.com/Sainirahul0807/rahul-agro-limited" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">View code</a>
+              </div>
+            </article>
+
+            <article class="projects__row">
+              <div class="projects__row-img-cont">
+                <img src="assets/png/Screenshot 2024-09-05 235759.png" alt="Budweiser Lager project preview" class="projects__row-img" loading="lazy" />
+              </div>
+              <div class="projects__row-content">
+                <span class="project-index">03 / Frontend</span>
+                <h3 class="projects__row-content-title">Budweiser Lager</h3>
+                <p class="projects__row-content-desc">
+                  A responsive product website with interactive sections for
+                  brand history, product information, and cultural impact.
+                </p>
+                <div class="project-tags">
+                  <span>React.js</span><span>HTML</span><span>Tailwind CSS</span>
+                </div>
+                <a href="https://budweiser-lager.vercel.app/" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">Live project</a>
+              </div>
+            </article>
+
+            <article class="projects__row projects__row--reverse">
+              <div class="projects__row-img-cont">
+                <img src="assets/jpeg/Screenshot 2024-09-01 181716.png" alt="Netflix UI Clone project preview" class="projects__row-img" loading="lazy" />
+              </div>
+              <div class="projects__row-content">
+                <span class="project-index">04 / UI recreation</span>
+                <h3 class="projects__row-content-title">Netflix UI Clone</h3>
+                <p class="projects__row-content-desc">
+                  A focused frontend recreation of Netflix India, built to
+                  practice layout systems, responsive styling, and visual
+                  hierarchy with HTML and CSS.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>Responsive design</span>
+                </div>
+                <a href="https://github.com/Sainirahul0807/Netflix-UI-Clone" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">View code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-strip">
+        <div class="main-container experience-strip__inner">
+          <div>
+            <p class="eyebrow eyebrow--light">Beyond the screen</p>
+            <h2>Curious, collaborative, and always learning.</h2>
+          </div>
+          <p>
+            Core Team Member, SSB Club · Konark 2.0 · E-SUMMIT’25 Business Quiz
+            · TATA Crucible Campus Quiz 2025 · Career Essentials · Cyber & AI
+            workshop
           </p>
         </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" class="home-hero__social-icon-link" rel="noopener noreferrer" target="_blank">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="LinkedIn profile"
-              class="home-hero__social-icon"
-              loading="lazy"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/Sainirahul0807" class="home-hero__social-icon-link" rel="noopener noreferrer" target="_blank">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="GitHub profile"
-              class="home-hero__social-icon"
-              loading="lazy"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://x.com/Rahulsaini0807" class="home-hero__social-icon-link" rel="noopener noreferrer" target="_blank">
-            <img
-              src="./assets/png/twitter-ico.png"
-              alt="Twitter profile"
-              class="home-hero__social-icon"
-              loading="lazy"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="https://www.instagram.com/sainirahul19/"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              src="./assets/png/insta-ico.png"
-              alt="Instagram profile"
-              class="home-hero__social-icon"
-              loading="lazy"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            I am persuing B.tech with a strong foundation in full stack web development, eager to contribute
-             my skills to a dynamic team. My passion lies in crafting user-friendly and visually 
-             appealing web experiences. Through my academic projects, I have gained hands-on experience 
-             in HTML, CSS, JavaScript and React.js, and I am constantly exploring new technologies and trends 
-             in the field. I am a quick learner, adaptable, and possess excellent problem-solving 
-             abilities. I am excited to apply my knowledge to real-world projects and contribute to
-              the success of the team.
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>Rahul Saini</strong>
-                and I'm a <strong> Full Stack Web Developer </strong>
-                . I've done
-                <strong> remote </strong>
-                projects to expertise in new skills to create
-                <strong>digital products </strong>
-                for both business and consumer use.
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">Node.js</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">React.js</div>
-              <div class="skills__skill">Next.js</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">C,C++</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">R Studio</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-        </h2>
+      </section>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets/jpeg/Screenshot 2024-09-01 181716.png"
-                alt="Netflix UI Clone Project"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Netflix UI Clone</h3>
-              <p class="projects__row-content-desc">
-                created a clone of UI of Netflix India with HTML and CSS 
-              </p>
-              <div><a
-                href="https://netflix-ui-clone-jet.vercel.app"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                rel="noopener noreferrer"
-                >live link</a></div>
-                <p style="color: white;">.</p>
-                <div></div> <a
-                href="https://github.com/Sainirahul0807/Netflix-UI-Clone"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                rel="noopener noreferrer"
-                >code link</a
-              ></div>
-            </div>
+      <section id="contact" class="contact sec-pad">
+        <div class="main-container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow--light">Start a conversation</p>
+            <h2 class="heading-sec__main heading-sec__main--lt">Contact me</h2>
+            <p class="heading-sec__sub heading-sec__sub--lt">
+              Have an opportunity, idea, or project in mind? Send a message and
+              it will open in your email client—no third-party form service
+              required.
+            </p>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets/png/Screenshot 2024-09-05 235759.png"
-                alt="Budweiser Lager Project"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Budweiser-Lager</h3>
-              <p class="projects__row-content-desc">
-                a digital tribute to Budweiser Lager! Using HTML, React.js, and Tailwind CSS, I've crafted a website from the sleek design to the interactive elements.
-              </p>
-              <a
-                href="https://budweiser-lager.vercel.app/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live link</a
-              >                <p style="color: white;">.</p>
 
-              <a
-              href="https://github.com/Sainirahul0807/Budweiser_Lager"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Code Link</a
-            >
+          <form id="contact-form" class="contact__form-container">
+            <div class="contact__form-grid">
+              <label class="contact__form-field">
+                <span class="contact__form-label">Name</span>
+                <input required type="text" name="name" placeholder="Your name" />
+              </label>
+              <label class="contact__form-field">
+                <span class="contact__form-label">Email</span>
+                <input required type="email" name="email" placeholder="you@example.com" />
+              </label>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact Me</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-           
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="email"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
+            <label class="contact__form-field">
+              <span class="contact__form-label">Message</span>
+              <textarea required name="message" rows="6" placeholder="Tell me a little about the opportunity or project"></textarea>
+            </label>
+            <button type="submit" class="btn btn--theme contact__btn">Send message</button>
+            <p id="form-status" class="form-status" role="status"></p>
           </form>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rahul-saini-3a8507257/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="LinkedIn"
-                  loading="lazy"
-                />
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Sainirahul0807">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="GitHub"
-                  loading="lazy"
-                />
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://x.com/Rahulsaini0807">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="Twitter"
-                  loading="lazy"
-                />
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sainirahul19/">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="Instagram"
-                  loading="lazy"
-                />
-              </a>
-            </div>
-          </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Rahul Saini</h4>
+            <p class="eyebrow eyebrow--light">Rahul Saini</p>
+            <h2>Building useful things with data, design, and code.</h2>
             <p class="main-footer__short-desc">
-             You can also Contact me from links following in the
-              left for any queries and projects.
+              B.Tech CSE student specializing in AI/ML, web development, and
+              data analytics.
             </p>
           </div>
+          <div class="main-footer__row main-footer__row-1">
+            <h3 class="heading-sm">Connect</h3>
+            <div class="main-footer__social-cont">
+              <a href="mailto:rahulparshant2003@gmail.com">Email</a>
+              <a href="tel:+919728517836">Call</a>
+              <a href="https://github.com/Sainirahul0807" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
         </div>
-
         <div class="main-footer__lower">
-           Made by
-          Rahul Saini
+          © <span id="year"></span> Rahul Saini. Designed and built for the web.
         </div>
       </div>
     </footer>
 
-    <script src="./index.js" defer></script>
+    <script src="index.js" defer></script>
   </body>
 </html>

@@ -1,38 +1,33 @@
-// ---
-const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
-const smallMenu = document.querySelector('.header__sm-menu')
-const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
-const headerHamMenuCloseBtn = document.querySelector(
-  '.header__main-ham-menu-close'
-)
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+const menuButton = document.querySelector('.header__main-ham-menu-cont');
+const smallMenu = document.querySelector('.header__sm-menu');
+const smallMenuLinks = document.querySelectorAll('.header__sm-menu a');
+const contactForm = document.querySelector('#contact-form');
+const formStatus = document.querySelector('#form-status');
 
-hamMenuBtn.addEventListener('click', () => {
-  if (smallMenu.classList.contains('header__sm-menu--active')) {
-    smallMenu.classList.remove('header__sm-menu--active')
-  } else {
-    smallMenu.classList.add('header__sm-menu--active')
-  }
-  if (headerHamMenuBtn.classList.contains('d-none')) {
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  } else {
-    headerHamMenuBtn.classList.add('d-none')
-    headerHamMenuCloseBtn.classList.remove('d-none')
-  }
-})
-
-for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener('click', () => {
-    smallMenu.classList.remove('header__sm-menu--active')
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  })
+function closeMenu() {
+  smallMenu.classList.remove('header__sm-menu--active');
+  smallMenu.setAttribute('aria-hidden', 'true');
+  menuButton.setAttribute('aria-expanded', 'false');
 }
 
-// ---
-const headerLogoConatiner = document.querySelector('.header__logo-container')
+menuButton.addEventListener('click', () => {
+  const isOpen = smallMenu.classList.toggle('header__sm-menu--active');
+  smallMenu.setAttribute('aria-hidden', String(!isOpen));
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+});
 
-headerLogoConatiner.addEventListener('click', () => {
-  location.href = 'index.html'
-})
+smallMenuLinks.forEach((link) => link.addEventListener('click', closeMenu));
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const subject = encodeURIComponent(`Portfolio enquiry from ${formData.get('name')}`);
+  const body = encodeURIComponent(
+    `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\n\n${formData.get('message')}`,
+  );
+  window.location.href = `mailto:rahulparshant2003@gmail.com?subject=${subject}&body=${body}`;
+  formStatus.textContent = 'Your email client is opening with the message ready to send.';
+  contactForm.reset();
+});
+
+document.querySelector('#year').textContent = new Date().getFullYear();

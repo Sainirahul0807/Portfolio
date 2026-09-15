@@ -1,12 +1,10 @@
 {
   "name": "rahul-saini-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Rahul Saini's portfolio website",
-  "main": "index.js",
+  "description": "Rahul Saini's AI/ML and web development portfolio",
   "scripts": {
-    "build": "node -e \"console.log('Static portfolio is ready for Vercel deployment')\"",
-    "start": "node index.js"
+    "build": "node -e \"console.log('Static portfolio is ready for Vercel deployment')\""
   },
   "author": "Rahul Saini",
   "license": "GPL-3.0"

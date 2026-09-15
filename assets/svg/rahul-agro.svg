@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rahul Agro Limited preview</title>
+  <desc id="desc">Abstract mustard and green preview for the Rahul Agro Limited cold storage platform.</desc>
+  <rect width="1600" height="1000" fill="#f3ead2"/>
+  <path d="M0 0h1600v245c-230 75-420-30-675 50-260 82-535 24-925 135Z" fill="#15291e"/>
+  <path d="M0 745c330-120 600 70 835-70 270-160 465-10 765-100v425H0Z" fill="#234c2d"/>
+  <path d="M0 880c310-145 610-35 840-150 230-115 520-45 760-130" fill="none" stroke="#dfb43c" stroke-width="18"/>
+  <g transform="translate(175 175)">
+    <rect width="560" height="470" rx="12" fill="#fffdf6" stroke="#15291e" stroke-width="12"/>
+    <rect x="42" y="42" width="476" height="75" fill="#dfb43c"/>
+    <rect x="42" y="155" width="210" height="210" fill="#d9ead4"/>
+    <rect x="272" y="155" width="246" height="25" fill="#b9c8b5"/>
+    <rect x="272" y="205" width="176" height="25" fill="#dfe9dc"/>
+    <rect x="272" y="255" width="212" height="25" fill="#dfe9dc"/>
+    <rect x="272" y="305" width="130" height="25" fill="#dfe9dc"/>
+    <circle cx="147" cy="257" r="72" fill="#6aa54c"/>
+    <path d="M147 190c-19 41-35 52-54 68 26 2 44 18 54 44 10-26 28-42 54-44-19-16-35-27-54-68Z" fill="#fff5c8"/>
+    <rect x="42" y="400" width="188" height="18" fill="#15291e"/>
+    <rect x="246" y="400" width="152" height="18" fill="#dfb43c"/>
+  </g>
+  <text x="850" y="420" fill="#15291e" font-family="Arial, sans-serif" font-size="70" font-weight="700">RAHUL AGRO</text>
+  <text x="855" y="510" fill="#315b38" font-family="Arial, sans-serif" font-size="35" font-weight="700" letter-spacing="6">COLD STORAGE • SMARTER FARMING</text>
+  <text x="855" y="585" fill="#536650" font-family="Arial, sans-serif" font-size="27">CHAMBERS · CALCULATOR · BOOKING · PROCUREMENT</text>
+</svg>

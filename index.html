@@ -3,343 +3,240 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0062b9" />
-    <meta
-      name="description"
-      content="Rahul Saini — AI/ML and web development portfolio."
-    />
-    <meta
-      name="keywords"
-      content="Rahul Saini, AI ML, web developer, React, Python, portfolio"
-    />
+    <meta name="theme-color" content="#110720" />
+    <meta name="description" content="Rahul Saini — AI/ML and web development portfolio." />
     <meta name="author" content="Rahul Saini" />
     <meta property="og:title" content="Rahul Saini | AI/ML & Web Developer" />
-    <meta
-      property="og:description"
-      content="Explore Rahul Saini's projects, skills, and experience in AI/ML, data analytics, and web development."
-    />
+    <meta property="og:description" content="AI/ML, data, and web projects by Rahul Saini." />
     <meta property="og:type" content="website" />
     <title>Rahul Saini | AI/ML & Web Developer</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <a class="header__logo-container" href="#home" aria-label="Rahul Saini home">
-          <span class="header__logo-img-cont" aria-hidden="true">
-            <span class="header__logo-mark">RS</span>
-          </span>
-          <span class="header__logo-sub">Rahul Saini</span>
-        </a>
+    <div class="ambient ambient--one"></div>
+    <div class="ambient ambient--two"></div>
 
-        <nav class="header__main" aria-label="Primary navigation">
-          <ul class="header__links">
-            <li><a href="#home" class="header__link">Home</a></li>
-            <li><a href="#about" class="header__link">About</a></li>
-            <li><a href="#projects" class="header__link">Projects</a></li>
-            <li><a href="#contact" class="header__link">Contact</a></li>
-          </ul>
-          <button class="header__main-ham-menu-cont" type="button" aria-label="Open menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-        </nav>
-      </div>
-      <div class="header__sm-menu" aria-hidden="true">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Rahul Saini home">
+          <span class="brand__mark">RS</span>
+          <span class="brand__name">Rahul Saini</span>
+        </a>
+        <div class="site-nav__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#lab">Lab</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-menu" aria-hidden="true">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#lab">Lab</a>
         <a href="#contact">Contact</a>
       </div>
     </header>
 
     <main>
-      <section id="home" class="home-hero">
-        <div class="home-hero__content">
-          <p class="eyebrow eyebrow--light">AI/ML • DATA • WEB</p>
-          <h1 class="heading-primary">Hey, my name is Rahul Saini</h1>
-          <div class="home-hero__info">
-            <p class="text-primary">
-              I’m a Computer Science and Engineering student specializing in
-              <strong>Artificial Intelligence and Machine Learning</strong>.
-              I build responsive digital experiences, practical data solutions,
-              and intelligent tools that turn ideas into useful products.
-            </p>
-          </div>
-          <div class="home-hero__cta">
-            <a href="#projects" class="btn btn--bg">View projects</a>
-          </div>
-        </div>
-
-        <div class="home-hero__socials" aria-label="Social links">
-          <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <img src="assets/png/linkedin-ico.png" alt="" />
-          </a>
-          <a href="https://github.com/Sainirahul0807" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <img src="assets/png/github-ico.png" alt="" />
-          </a>
-          <a href="mailto:rahulparshant2003@gmail.com" aria-label="Email Rahul">
-            <span class="social-letter">@</span>
-          </a>
-          <a href="tel:+919728517836" class="home-hero__social-icon-link--last" aria-label="Call Rahul">
-            <span class="social-letter">☎</span>
-          </a>
-        </div>
-        <a class="mouse-scroll" href="#about" aria-label="Scroll to about section">
-          <span></span>
-        </a>
-      </section>
-
-      <section id="about" class="about sec-pad">
-        <div class="main-container">
-          <div class="section-heading">
-            <p class="eyebrow">A little about me</p>
-            <h2 class="heading-sec__main">About me</h2>
-            <p class="heading-sec__sub">
-              B.Tech Computer Science and Engineering student at Guru Jambheshwar
-              University of Science & Technology, Hisar, with a focus on AI/ML,
-              data analytics, and frontend development.
-            </p>
-          </div>
-
-          <div class="about__content">
-            <div class="about__content-main">
-              <h3 class="about__content-title">Get to know me</h3>
-              <p class="about__content-details-para">
-                I enjoy working at the intersection of data, design, and
-                technology. My experience includes building responsive
-                interfaces with React and Tailwind CSS, exploring machine
-                learning, and turning information into clear, useful insights
-                with Python, SQL, Excel, and Power BI.
-              </p>
-              <p class="about__content-details-para">
-                I’m a quick learner who brings analytical thinking,
-                adaptability, teamwork, and clear communication to every
-                project. I’m currently completing my B.Tech with a
-                specialization in Artificial Intelligence and Machine Learning.
-              </p>
-              <a href="#contact" class="btn btn--med btn--theme">Let’s connect</a>
-            </div>
-
-            <div class="about__content-skills">
-              <h3 class="about__content-title">My skills</h3>
-              <div class="skills">
-                <span class="skills__skill">Python</span>
-                <span class="skills__skill">C</span>
-                <span class="skills__skill">Java</span>
-                <span class="skills__skill">R</span>
-                <span class="skills__skill">SQL</span>
-                <span class="skills__skill">HTML</span>
-                <span class="skills__skill">CSS</span>
-                <span class="skills__skill">React.js</span>
-                <span class="skills__skill">Tailwind CSS</span>
-                <span class="skills__skill">Power BI</span>
-                <span class="skills__skill">Excel</span>
-                <span class="skills__skill">Machine Learning</span>
-                <span class="skills__skill">AI Chatbots</span>
-                <span class="skills__skill">Prompt Engineering</span>
-                <span class="skills__skill">GitHub</span>
-                <span class="skills__skill">Jupyter Notebook</span>
-                <span class="skills__skill">Figma</span>
-                <span class="skills__skill">Vercel</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="credentials">
-            <article class="credential-card">
-              <span class="credential-card__label">Education</span>
-              <h3>B.Tech CSE — AI/ML</h3>
-              <p>Guru Jambheshwar University of Science & Technology, Hisar</p>
-              <strong>2022–2026 · 73%</strong>
-            </article>
-            <article class="credential-card">
-              <span class="credential-card__label">Certifications</span>
-              <h3>Data & machine learning</h3>
-              <p>IBM Data Analyst and Machine Learning with Scikit Learn</p>
-              <strong>Mind Luster · 2026</strong>
-            </article>
-            <article class="credential-card">
-              <span class="credential-card__label">Internship</span>
-              <h3>Web development</h3>
-              <p>One month internship programme at InternPe</p>
-              <strong>September 2024</strong>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects sec-pad">
-        <div class="main-container">
-          <div class="section-heading">
-            <p class="eyebrow">Selected work</p>
-            <h2 class="heading-sec__main">Projects</h2>
-            <p class="heading-sec__sub">
-              A mix of product interfaces, data-focused tools, and real-world
-              platforms built with modern web technologies.
-            </p>
-          </div>
-
-          <div class="projects__content">
-            <article class="projects__row">
-              <div class="projects__row-img-cont">
-                <img src="assets/svg/fuel-restoration.svg" alt="Fuel Restoration project preview" class="projects__row-img" loading="lazy" />
-              </div>
-              <div class="projects__row-content">
-                <span class="project-index">01 / Featured project</span>
-                <h3 class="projects__row-content-title">Fuel Restoration</h3>
-                <p class="projects__row-content-desc">
-                  A responsive sustainability platform for collecting used
-                  cooking oil, routing pickups, and turning waste into a
-                  lower-carbon fuel story. Built with React, TypeScript, and
-                  a strong focus on clear user flows.
-                </p>
-                <div class="project-tags">
-                  <span>React</span><span>TypeScript</span><span>Responsive UI</span>
-                </div>
-                <a href="https://github.com/Sainirahul0807/Fuel-Restoration" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">View code</a>
-              </div>
-            </article>
-
-            <article class="projects__row projects__row--reverse">
-              <div class="projects__row-img-cont">
-                <img src="assets/svg/rahul-agro.svg" alt="Rahul Agro Limited project preview" class="projects__row-img" loading="lazy" />
-              </div>
-              <div class="projects__row-content">
-                <span class="project-index">02 / Featured project</span>
-                <h3 class="projects__row-content-title">Rahul Agro Limited</h3>
-                <p class="projects__row-content-desc">
-                  A production-ready cold-storage platform with chamber
-                  discovery, rent calculation, multi-step booking,
-                  government procurement, multilingual support, and the Rahul
-                  Agro Sahayak AI chatbot.
-                </p>
-                <div class="project-tags">
-                  <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
-                </div>
-                <a href="https://github.com/Sainirahul0807/rahul-agro-limited" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">View code</a>
-              </div>
-            </article>
-
-            <article class="projects__row">
-              <div class="projects__row-img-cont">
-                <img src="assets/png/Screenshot 2024-09-05 235759.png" alt="Budweiser Lager project preview" class="projects__row-img" loading="lazy" />
-              </div>
-              <div class="projects__row-content">
-                <span class="project-index">03 / Frontend</span>
-                <h3 class="projects__row-content-title">Budweiser Lager</h3>
-                <p class="projects__row-content-desc">
-                  A responsive product website with interactive sections for
-                  brand history, product information, and cultural impact.
-                </p>
-                <div class="project-tags">
-                  <span>React.js</span><span>HTML</span><span>Tailwind CSS</span>
-                </div>
-                <a href="https://budweiser-lager.vercel.app/" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">Live project</a>
-              </div>
-            </article>
-
-            <article class="projects__row projects__row--reverse">
-              <div class="projects__row-img-cont">
-                <img src="assets/jpeg/Screenshot 2024-09-01 181716.png" alt="Netflix UI Clone project preview" class="projects__row-img" loading="lazy" />
-              </div>
-              <div class="projects__row-content">
-                <span class="project-index">04 / UI recreation</span>
-                <h3 class="projects__row-content-title">Netflix UI Clone</h3>
-                <p class="projects__row-content-desc">
-                  A focused frontend recreation of Netflix India, built to
-                  practice layout systems, responsive styling, and visual
-                  hierarchy with HTML and CSS.
-                </p>
-                <div class="project-tags">
-                  <span>HTML</span><span>CSS</span><span>Responsive design</span>
-                </div>
-                <a href="https://github.com/Sainirahul0807/Netflix-UI-Clone" class="btn btn--med btn--theme" target="_blank" rel="noopener noreferrer">View code</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience-strip">
-        <div class="main-container experience-strip__inner">
-          <div>
-            <p class="eyebrow eyebrow--light">Beyond the screen</p>
-            <h2>Curious, collaborative, and always learning.</h2>
-          </div>
-          <p>
-            Core Team Member, SSB Club · Konark 2.0 · E-SUMMIT’25 Business Quiz
-            · TATA Crucible Campus Quiz 2025 · Career Essentials · Cyber & AI
-            workshop
+      <section id="home" class="hero section-shell">
+        <div class="hero__copy">
+          <p class="kicker">AI/ML · DATA · DIGITAL PRODUCTS</p>
+          <p class="hello">Hello! I Am <span>Rahul Saini</span></p>
+          <h1>A developer who builds with <em>logic</em> and <em>intent</em>.</h1>
+          <p class="hero__sub">
+            I’m a Computer Science and Engineering student specializing in
+            Artificial Intelligence and Machine Learning. I like turning
+            complex ideas into clear, useful digital experiences.
           </p>
+          <p class="role-line">I’m a <strong id="rotating-title">AI/ML student</strong><span class="cursor">|</span></p>
+          <p class="hero__detail">
+            Currently building with Python, React, SQL, data visualization,
+            and modern frontend technologies.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#lab">Explore my lab <span>↗</span></a>
+            <a class="button button--ghost" href="mailto:rahulparshant2003@gmail.com">Let’s talk</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-label="Abstract AI and web development illustration">
+          <div class="hero__glow"></div>
+          <img src="assets/svg/rahul-hero.svg" alt="Abstract illustration of data, code, and connected ideas" />
+          <div class="hero__badge hero__badge--top"><span>01</span> build with curiosity</div>
+          <div class="hero__badge hero__badge--bottom"><span>02</span> ship with purpose</div>
         </div>
       </section>
 
-      <section id="contact" class="contact sec-pad">
-        <div class="main-container">
-          <div class="section-heading">
-            <p class="eyebrow eyebrow--light">Start a conversation</p>
-            <h2 class="heading-sec__main heading-sec__main--lt">Contact me</h2>
-            <p class="heading-sec__sub heading-sec__sub--lt">
-              Have an opportunity, idea, or project in mind? Send a message and
-              it will open in your email client—no third-party form service
-              required.
-            </p>
-          </div>
-
-          <form id="contact-form" class="contact__form-container">
-            <div class="contact__form-grid">
-              <label class="contact__form-field">
-                <span class="contact__form-label">Name</span>
-                <input required type="text" name="name" placeholder="Your name" />
-              </label>
-              <label class="contact__form-field">
-                <span class="contact__form-label">Email</span>
-                <input required type="email" name="email" placeholder="you@example.com" />
-              </label>
-            </div>
-            <label class="contact__form-field">
-              <span class="contact__form-label">Message</span>
-              <textarea required name="message" rows="6" placeholder="Tell me a little about the opportunity or project"></textarea>
-            </label>
-            <button type="submit" class="btn btn--theme contact__btn">Send message</button>
-            <p id="form-status" class="form-status" role="status"></p>
-          </form>
+      <section class="focus section-shell">
+        <div class="section-intro">
+          <p class="kicker">What I enjoy working on</p>
+          <h2>Building useful things<br /><span>from the ground up.</span></h2>
         </div>
+        <div class="focus__grid">
+          <article class="focus-card">
+            <div class="focus-card__icon">⌘</div>
+            <h3>AI & machine learning</h3>
+            <p>Exploring practical ML, AI chatbots, prompt engineering, and intelligent tools.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+          <article class="focus-card">
+            <div class="focus-card__icon">◌</div>
+            <h3>Web platforms</h3>
+            <p>Creating responsive, accessible interfaces with React, TypeScript, and Tailwind CSS.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+          <article class="focus-card">
+            <div class="focus-card__icon">⌁</div>
+            <h3>Data & analytics</h3>
+            <p>Using Python, SQL, Excel, and Power BI to turn raw information into clear insights.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+          <article class="focus-card">
+            <div class="focus-card__icon">✦</div>
+            <h3>Product thinking</h3>
+            <p>Balancing user needs, visual hierarchy, technical constraints, and real-world outcomes.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell">
+        <div class="about__statement">
+          <p class="kicker">A little about me</p>
+          <h2>I’m currently looking to join a <span>cross-functional team</span> that values thoughtful technology.</h2>
+          <p class="about__note">With a strong foundation in AI/ML, analytics, and frontend development, I’m excited to keep learning while contributing to products that improve people’s everyday work.</p>
+        </div>
+        <div class="about__grid">
+          <div class="glass-panel about__profile">
+            <p class="panel-label">The short version</p>
+            <h3>Curious by default.<br />Practical by design.</h3>
+            <p>
+              I’m completing my B.Tech in Computer Science and Engineering at
+              Guru Jambheshwar University of Science & Technology, Hisar. I
+              enjoy collaborating, learning quickly, and making ideas easier
+              to understand through code and design.
+            </p>
+            <div class="about__stats">
+              <div><strong>73%</strong><span>B.Tech CSE · AI/ML</span></div>
+              <div><strong>2024</strong><span>Web development internship</span></div>
+              <div><strong>2026</strong><span>Expected graduation</span></div>
+            </div>
+          </div>
+          <div class="skills-panel">
+            <p class="panel-label">My toolkit</p>
+            <div class="skill-cloud">
+              <span class="skill skill--bright">Python</span><span class="skill">React.js</span><span class="skill">SQL</span>
+              <span class="skill skill--bright">Machine Learning</span><span class="skill">Java</span><span class="skill">TypeScript</span>
+              <span class="skill">Power BI</span><span class="skill skill--bright">Prompt Engineering</span><span class="skill">Tailwind CSS</span>
+              <span class="skill">C</span><span class="skill">R</span><span class="skill">Excel</span>
+              <span class="skill">GitHub</span><span class="skill">Figma</span><span class="skill">Vercel</span>
+            </div>
+            <div class="skills-panel__footer">
+              <span>Also comfortable with</span>
+              <strong>VS Code · IntelliJ IDEA · Jupyter Notebook · AI chatbots</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lab" class="lab section-shell">
+        <div class="section-intro section-intro--center">
+          <p class="kicker">Selected work</p>
+          <h2>Projects I’ve been<br /><span>bringing to life.</span></h2>
+        </div>
+
+        <article class="project">
+          <div class="project__copy">
+            <p class="project__label">Featured project · 01</p>
+            <h3>Fuel Restoration</h3>
+            <div class="project__description">
+              <p>
+                A responsive sustainability platform for collecting used
+                cooking oil, routing pickups, and turning waste into a
+                lower-carbon fuel story. Built with React and TypeScript with
+                clear, friendly user flows.
+              </p>
+            </div>
+            <div class="project__tags"><span>React</span><span>TypeScript</span><span>Responsive UI</span></div>
+            <a class="text-link" href="https://github.com/Sainirahul0807/Fuel-Restoration" target="_blank" rel="noopener noreferrer">View project code <span>↗</span></a>
+          </div>
+          <a class="project__image" href="https://github.com/Sainirahul0807/Fuel-Restoration" target="_blank" rel="noopener noreferrer">
+            <img src="assets/svg/fuel-restoration.svg" alt="Fuel Restoration project preview" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project project--reverse">
+          <div class="project__copy">
+            <p class="project__label">Featured project · 02</p>
+            <h3>Rahul Agro Limited</h3>
+            <div class="project__description">
+              <p>
+                A production-ready cold-storage platform with chamber
+                discovery, rent calculation, multi-step booking, government
+                procurement, multilingual support, and the Rahul Agro Sahayak
+                AI chatbot.
+              </p>
+            </div>
+            <div class="project__tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span></div>
+            <a class="text-link" href="https://github.com/Sainirahul0807/rahul-agro-limited" target="_blank" rel="noopener noreferrer">View project code <span>↗</span></a>
+          </div>
+          <a class="project__image" href="https://github.com/Sainirahul0807/rahul-agro-limited" target="_blank" rel="noopener noreferrer">
+            <img src="assets/svg/rahul-agro.svg" alt="Rahul Agro Limited project preview" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project">
+          <div class="project__copy">
+            <p class="project__label">Frontend project · 03</p>
+            <h3>Budweiser Lager</h3>
+            <div class="project__description">
+              <p>A responsive product website with interactive sections for brand history, product information, and cultural impact.</p>
+            </div>
+            <div class="project__tags"><span>React.js</span><span>HTML</span><span>Tailwind CSS</span></div>
+            <a class="text-link" href="https://budweiser-lager.vercel.app/" target="_blank" rel="noopener noreferrer">Open live project <span>↗</span></a>
+          </div>
+          <a class="project__image project__image--photo" href="https://budweiser-lager.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/png/Screenshot 2024-09-05 235759.png" alt="Budweiser Lager project preview" loading="lazy" />
+          </a>
+        </article>
+
+        <article class="project project--reverse">
+          <div class="project__copy">
+            <p class="project__label">UI recreation · 04</p>
+            <h3>Netflix UI Clone</h3>
+            <div class="project__description">
+              <p>A focused frontend recreation of Netflix India, built to practice layout systems, responsive styling, and visual hierarchy.</p>
+            </div>
+            <div class="project__tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div>
+            <a class="text-link" href="https://github.com/Sainirahul0807/Netflix-UI-Clone" target="_blank" rel="noopener noreferrer">View project code <span>↗</span></a>
+          </div>
+          <a class="project__image project__image--photo" href="https://github.com/Sainirahul0807/Netflix-UI-Clone" target="_blank" rel="noopener noreferrer">
+            <img src="assets/jpeg/Screenshot 2024-09-01 181716.png" alt="Netflix UI Clone project preview" loading="lazy" />
+          </a>
+        </article>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-2">
-            <p class="eyebrow eyebrow--light">Rahul Saini</p>
-            <h2>Building useful things with data, design, and code.</h2>
-            <p class="main-footer__short-desc">
-              B.Tech CSE student specializing in AI/ML, web development, and
-              data analytics.
-            </p>
-          </div>
-          <div class="main-footer__row main-footer__row-1">
-            <h3 class="heading-sm">Connect</h3>
-            <div class="main-footer__social-cont">
-              <a href="mailto:rahulparshant2003@gmail.com">Email</a>
-              <a href="tel:+919728517836">Call</a>
-              <a href="https://github.com/Sainirahul0807" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-        <div class="main-footer__lower">
-          © <span id="year"></span> Rahul Saini. Designed and built for the web.
-        </div>
+    <footer id="contact" class="footer section-shell">
+      <div class="footer__intro">
+        <p class="kicker">Let’s connect</p>
+        <h2>Have a project in mind?<br /><span>Let’s make it useful.</span></h2>
+        <p>I’m open to internships, collaborative builds, and conversations about AI, data, and frontend development.</p>
+        <a class="email-link" href="mailto:rahulparshant2003@gmail.com">rahulparshant2003@gmail.com <span>↗</span></a>
+      </div>
+      <div class="footer__socials">
+        <a href="https://github.com/Sainirahul0807" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
+        <a href="tel:+919728517836">+91 9728517836 <span>↗</span></a>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Rahul Saini</span>
+        <span>Built with curiosity · deployed on Vercel</span>
       </div>
     </footer>
 

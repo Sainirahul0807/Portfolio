@@ -18,6 +18,45 @@ menuButton.addEventListener('click', () => {
 
 mobileLinks.forEach((link) => link.addEventListener('click', closeMenu));
 
+const enquiryForm = document.querySelector('#enquiry');
+const enquiryNote = document.querySelector('.enquiry__note');
+const talkButtons = document.querySelectorAll('a[href="#enquiry"]');
+
+talkButtons.forEach((link) => {
+  link.addEventListener('click', () => {
+    window.setTimeout(() => {
+      document.querySelector('#enquiry-name')?.focus();
+    }, 450);
+  });
+});
+
+if (enquiryForm) {
+  enquiryForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = document.querySelector('#enquiry-name').value.trim();
+    const place = document.querySelector('#enquiry-place').value.trim();
+    const phone = document.querySelector('#enquiry-phone').value.trim();
+    const message = document.querySelector('#enquiry-message').value.trim();
+
+    if (!name || !place || !phone || !message) {
+      if (enquiryNote) enquiryNote.textContent = 'Please fill in every field before submitting.';
+      return;
+    }
+
+    const subject = encodeURIComponent(`New enquiry from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nPlace: ${place}\nPhone: ${phone}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:rahulparshant2003@gmail.com?subject=${subject}&body=${body}`;
+
+    if (enquiryNote) {
+      enquiryNote.textContent = 'Opening your email app to send this enquiry…';
+    }
+  });
+}
+
 const roles = ['AI/ML student', 'frontend developer', 'data enthusiast', 'curious builder'];
 let roleIndex = 0;
 let characterIndex = 0;

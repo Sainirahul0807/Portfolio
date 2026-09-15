@@ -61,7 +61,7 @@
           </p>
           <div class="hero__actions">
             <a class="button button--primary" href="#lab">Explore my lab <span>↗</span></a>
-            <a class="button button--ghost" href="mailto:rahulparshant2003@gmail.com">Let’s talk</a>
+            <a class="button button--ghost" href="#enquiry">Let’s talk</a>
           </div>
         </div>
         <div class="hero__visual" aria-label="Abstract AI and web development illustration">
@@ -163,9 +163,9 @@
               </p>
             </div>
             <div class="project__tags"><span>React</span><span>TypeScript</span><span>Responsive UI</span></div>
-            <a class="text-link" href="https://github.com/Sainirahul0807/Fuel-Restoration" target="_blank" rel="noopener noreferrer">View project code <span>↗</span></a>
+            <a class="text-link" href="https://fuel-restoration-api-server.vercel.app/" target="_blank" rel="noopener noreferrer">Open live project <span>↗</span></a>
           </div>
-          <a class="project__image" href="https://github.com/Sainirahul0807/Fuel-Restoration" target="_blank" rel="noopener noreferrer">
+          <a class="project__image" href="https://fuel-restoration-api-server.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src="assets/svg/fuel-restoration.svg" alt="Fuel Restoration project preview" loading="lazy" />
           </a>
         </article>
@@ -183,9 +183,9 @@
               </p>
             </div>
             <div class="project__tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span></div>
-            <a class="text-link" href="https://github.com/Sainirahul0807/rahul-agro-limited" target="_blank" rel="noopener noreferrer">View project code <span>↗</span></a>
+            <a class="text-link" href="https://rahul-agro-limited-api-server.vercel.app/" target="_blank" rel="noopener noreferrer">Open live project <span>↗</span></a>
           </div>
-          <a class="project__image" href="https://github.com/Sainirahul0807/rahul-agro-limited" target="_blank" rel="noopener noreferrer">
+          <a class="project__image" href="https://rahul-agro-limited-api-server.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src="assets/svg/rahul-agro.svg" alt="Rahul Agro Limited project preview" loading="lazy" />
           </a>
         </article>
@@ -213,9 +213,9 @@
               <p>A focused frontend recreation of Netflix India, built to practice layout systems, responsive styling, and visual hierarchy.</p>
             </div>
             <div class="project__tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div>
-            <a class="text-link" href="https://github.com/Sainirahul0807/Netflix-UI-Clone" target="_blank" rel="noopener noreferrer">View project code <span>↗</span></a>
+            <a class="text-link" href="https://netflix-ui-clone-jet.vercel.app/" target="_blank" rel="noopener noreferrer">Open live project <span>↗</span></a>
           </div>
-          <a class="project__image project__image--photo" href="https://github.com/Sainirahul0807/Netflix-UI-Clone" target="_blank" rel="noopener noreferrer">
+          <a class="project__image project__image--photo" href="https://netflix-ui-clone-jet.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img src="assets/jpeg/Screenshot 2024-09-01 181716.png" alt="Netflix UI Clone project preview" loading="lazy" />
           </a>
         </article>
@@ -229,6 +229,32 @@
         <p>I’m open to internships, collaborative builds, and conversations about AI, data, and frontend development.</p>
         <a class="email-link" href="mailto:rahulparshant2003@gmail.com">rahulparshant2003@gmail.com <span>↗</span></a>
       </div>
+
+      <form id="enquiry" class="glass-panel enquiry" novalidate>
+        <p class="panel-label">Send an enquiry</p>
+        <h3>Tell me a bit about it.</h3>
+        <div class="enquiry__grid">
+          <div class="enquiry__field">
+            <label for="enquiry-name">Name</label>
+            <input type="text" id="enquiry-name" name="name" placeholder="Your name" autocomplete="name" required />
+          </div>
+          <div class="enquiry__field">
+            <label for="enquiry-place">Place</label>
+            <input type="text" id="enquiry-place" name="place" placeholder="City / location" autocomplete="address-level2" required />
+          </div>
+          <div class="enquiry__field">
+            <label for="enquiry-phone">Phone number</label>
+            <input type="tel" id="enquiry-phone" name="phone" placeholder="Your phone number" autocomplete="tel" required />
+          </div>
+          <div class="enquiry__field enquiry__field--full">
+            <label for="enquiry-message">Message</label>
+            <textarea id="enquiry-message" name="message" rows="4" placeholder="What would you like to talk about?" required></textarea>
+          </div>
+        </div>
+        <button class="button button--primary" type="submit">Submit enquiry</button>
+        <p class="enquiry__note" aria-live="polite"></p>
+      </form>
+
       <div class="footer__socials">
         <a href="https://github.com/Sainirahul0807" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
         <a href="https://www.linkedin.com/in/rahul-saini-3a8507257/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>

@@ -699,6 +699,84 @@ img {
   font-size: 1.55rem;
 }
 
+.enquiry {
+  margin: 5rem auto 0;
+  max-width: 78rem;
+  scroll-margin-top: 12rem;
+  text-align: left;
+}
+
+.enquiry h3 {
+  font-size: clamp(2rem, 2.6vw, 2.8rem);
+  letter-spacing: -.04em;
+  line-height: 1.2;
+  margin: 1rem 0 2.6rem;
+}
+
+.enquiry__grid {
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.enquiry__field {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.enquiry__field--full {
+  grid-column: 1 / -1;
+}
+
+.enquiry__field label {
+  color: var(--soft);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.enquiry__field input,
+.enquiry__field textarea {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: .7rem;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 1.1rem 1.3rem;
+  transition: background .25s ease, border-color .25s ease;
+  width: 100%;
+}
+
+.enquiry__field textarea {
+  resize: vertical;
+}
+
+.enquiry__field input::placeholder,
+.enquiry__field textarea::placeholder {
+  color: rgba(255, 255, 255, .38);
+}
+
+.enquiry__field input:focus,
+.enquiry__field textarea:focus {
+  background: rgba(255, 255, 255, .09);
+  border-color: var(--purple);
+  outline: none;
+}
+
+.enquiry .button {
+  margin-top: 2.8rem;
+}
+
+.enquiry__note {
+  color: var(--purple-light);
+  font-size: 1.3rem;
+  margin-top: 1.4rem;
+  min-height: 1.6em;
+}
+
 .footer__socials {
   display: flex;
   gap: 1rem;
@@ -861,6 +939,10 @@ img {
 
   .project__image {
     width: 100%;
+  }
+
+  .enquiry__grid {
+    grid-template-columns: 1fr;
   }
 
   .footer__socials {

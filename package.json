@@ -1,7 +1,7 @@
 {
   "name": "dopefolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio Template for Developer",
   "main": "index.js",
   "scripts": {
     "compile:scss": "node-sass sass/main.scss css/style.css -w",
@@ -9,7 +9,7 @@
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
     "build": "npm-run-all prefix:css compress:css"
   },
-  "author": "",
+  "author": "Rahul Saini",
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
